@@ -23,7 +23,7 @@ if [[ "$#" -gt 0 ]]
 then
   DOCKER_TAG=$1
 else
-  DOCKER_TAG="thirdeye:latest"
+  DOCKER_TAG="thirdeye:new"
   echo "Not specified a Docker Tag, using default tag: ${DOCKER_TAG}."
 fi
 
@@ -39,7 +39,7 @@ if [[ "$#" -gt 2 ]]
 then
   PINOT_GIT_URL=$3
 else
-  PINOT_GIT_URL="https://github.com/apache/incubator-pinot.git"
+  PINOT_GIT_URL="https://github.com/yeshreddy7/pinot_clone.git"
 fi
 
 echo "Trying to build Thirdeye docker image from Git URL: [ ${PINOT_GIT_URL} ] on branch: [ ${PINOT_BRANCH} ] and tag it as: [ ${DOCKER_TAG} ]."
